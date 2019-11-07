@@ -1,0 +1,43 @@
+.Box{
+  position:absolute;
+  width:200px;
+  height:400px;
+  background-color: aqua
+}
+.Box>input{
+  display:block;
+  margin:20px;
+}
+.Box >button{
+  display:block;
+  marging:20px
+}
+.List{
+  position:absolute;
+  top:100px;
+  left:100px;
+  background-color: aquamarine
+
+}
+/* .App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #09d3ac;
+} */

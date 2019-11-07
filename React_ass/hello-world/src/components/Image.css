@@ -1,0 +1,14 @@
+.box{
+    border:1px solid black;
+    position:absolute;
+    margin-left:200px;
+}
+.border-box{
+    border-bottom: 1px solid black;
+}
+ .Div{
+     background-color: grey;
+     height:100px;
+     margin-left: 20px;
+
+ }
