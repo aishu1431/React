@@ -1,35 +1,37 @@
-import React, { Component } from 'react'
+import React from 'react'
 
+function Time() {
+    let time = new Date().getHours();
+    console.log(time);
+    let day = time % 12;
+    console.log(day);
+    let timeOfDay
+    var styles={
+        fontSize:'30px',
+        
+       
+    }
 
-class Time extends Component{
-        constructor(){
-        super()
-        
-        
-        this.state={
-        buttonDisabled:false,
-        time:new Date().getHours()
-        
+        if(day <19){
+            timeOfDay = "morning"
+            styles.color="green"
         }
+        else if(day >= 12 && day < 17){
+            timeOfDay = "afternoon"
+            styles.color="powderblue"
         }
-        
-        
-        
-        render(){
-        // return(
-        // <div>
-        // <h1>{this.state.time}</h1>
-        
-        // <button onClick={this.onHandleClick}>disableButton</button>
-        // </div>
-        // )}
-        if(this.state.time == 16){
-        return<button disabled={this.state.buttonDisabled}>Click</button>
+        else {
+            timeOfDay = "night"
+             styles.color="yellow"
         }
-        else{
-        return<button disabled={true}>Clock</button>
-        }
-        }
-        }
-        
-export default Time        
+       
+            
+        return (
+            // <h1 style={{color:'powderblue', backgroundColor:'red'}}>Good {timeOfDay}</h1> //this is one method of inline style
+
+             <h1 style = {styles} >Good {timeOfDay}!</h1>
+        )
+       
+}
+
+export default Time
